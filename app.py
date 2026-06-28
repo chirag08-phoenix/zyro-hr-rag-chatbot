@@ -30,7 +30,7 @@ st.caption(
 # SETTINGS
 # ------------------------------------------------
 from pathlib import Path
-CORPUS_PATH = Path(__file__).parent / "hr_corpus"
+CORPUS_PATH = Path(__file__).parent / "hr-corpus"
 
 MODEL = "llama-3.3-70b-versatile"
 
