@@ -1,4 +1,6 @@
 import os
+
+GROQ_API_KEY = os.environ["GROQ_API_KEY"]
 import streamlit as st
 
 from langchain_community.document_loaders import PyPDFDirectoryLoader
@@ -27,8 +29,10 @@ st.caption(
 # ------------------------------------------------
 # SETTINGS
 # ------------------------------------------------
+from pathlib import Path
 
-CORPUS_PATH = "/mount/src/zyro-dynamics-hr-corpus"
+BASE_DIR = Path(__file__).parent
+CORPUS_PATH = BASE_DIR / "hr_corpus"
 
 MODEL = "llama-3.3-70b-versatile"
 
